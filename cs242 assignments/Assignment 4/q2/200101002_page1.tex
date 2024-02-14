@@ -1,0 +1,45 @@
+\documentclass{article} % document class is set to article
+\usepackage{xcolor} % two packages are used, xcolor for giving color to text in a specific place, and amsmath for writing maths equations
+\usepackage{amsmath} 
+\begin{document}		% beginning the document
+\title{Hello World!}		% title of document
+\author{Aadi Aarya Chandra}	% author of document
+\date{November 17, 2021} 	% command to write date
+\maketitle
+\thispagestyle{empty}		% this allows us to remove page numbers
+\section{Getting started}	% section allows us to make sections within document with headings
+\textbf{Hello world!} Today I am learning \LaTeX. \LaTeX\ is a great program for writing math. I can write in line math such as $a^2 + b^2 = c^2$. I can also give equations their own space: % textbf is used to write text in bold, \LaTeX writes latex in special style
+\begin{equation} 
+\gamma^2 + \theta^2 = \omega^2 \\
+\end{equation} % single equations written using equation command
+\lq\lq Maxwell's equations\rq\rq \;are named for James Clark Maxwell and are as follow: % quotes are given using lq and rq for left and right quotes
+\begin{align}
+\vec{\nabla} \cdot \vec{E}  \;\;\; &= \;\;\; \frac{\rho}{\epsilon_0} && \; \text {Gauss's Law}\\
+\vec{\nabla} \cdot \vec{B} \;\;\; &= \;\;\; 0 && \; \text {Gauss's Law for Magnetism}\\
+\vec{\nabla} \times \vec{E}  \;\;\; &= \;\;\;  -\frac{\partial \vec{B}}{\partial t} && \; \text {Faraday's Law of Induction}\\
+\vec{\nabla} \times \vec{B}  \;\;\; &= \;\;\; \mu_0\biggl(\epsilon_0\frac{\partial \vec{E}}{\partial t} + \vec{J}\biggr)&& \; \text {Ampere's Circuital Law}
+\end{align} % align is used to create a list of equations in a particular order, aligned properly. Appropriate spaces are given to improve readabiility
+Equations \textcolor{blue}{2}, \textcolor{blue}{3}, \textcolor{blue}{4}, and \textcolor{blue}{5} are some of the most important in Physics.\\ % textcolor{blue}{} writes given text in blue
+\section{What about Matrix Equations?\\} % next section
+\[
+\begin{pmatrix} % matrix with curved brackets is made using pmatrix
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn} \\
+\end{pmatrix}
+\begin{bmatrix}			% bmatrix gives matrix with square brackets
+v_1 \\
+v_2 \\
+\vdots \\
+v_n \\
+\end{bmatrix}
+=
+\begin{matrix}		% matrix gives matrix with no brackets
+w_1 \\
+w_2 \\
+\vdots \\
+w_n \\
+\end{matrix}
+\]
+\end{document}		% end of document

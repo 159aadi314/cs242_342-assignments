@@ -1,0 +1,48 @@
+\documentclass{article}  % document class is article
+\usepackage{amsmath} 		% amsmath package is used
+\begin{document}		% beginning of document
+\pagestyle{empty}		% this is done to remove page number
+\begin{gather*}		% gather* is used to write centrally aligned equations one after the other
+\iiint\limits_V f(x,y,z) \,dV = F\\[0.15cm] % triple integral
+\frac{dx}{dy} = x' = \lim\limits_{h \to 0} \frac{f(x+h) - f(x)}{h}\\[0.3cm]		% equations written with appropriate spacings between them
+|x|=
+\begin{cases}		% cases is used to write piecewise functions
+-x, & \text{if } x < 0\\
+x, & \text{if } x \geq 0\\
+\end{cases}\\[0.15cm]
+F(x) = A_0 + \sum_{n=1}^N\biggl[A_n\cos\biggl({\frac{2\pi nx}{P}}\biggr) + B_n\sin\biggl({\frac{2\pi nx}{P}}\biggr)\biggr]\\[0.25cm]
+\sum_{n}\frac{1}{n^s} = \prod_p \frac{1}{1-\frac{1}{p^s}}\\[0.25cm]
+m\ddot x + c\dot x + kx = F_0sin(2\pi ft)\\[0.3cm] % biggl gives big left brackets and similarly biggr gives big right brackets
+\begin{split} 		% split is used to write equations over multiple lines
+f(x) \;\;\; &= \;\;\;\; x^2 + 3x + 5x^2 + 8 + 6x\\
+\;\;\; &= \;\;\;\; 6x^2 + 9x + 8\\
+\;\;\; &= \;\;\;\; x(6x+9) + 8\\[0.25cm]
+\end{split}\\[0.15cm]
+X = \frac{F_0}{k}\frac{1}{\sqrt[]{(1-r^2)^2 + (2\zeta r)^2}}\\[0.5cm]	% frac used for fractions, sqrt for square root
+G_{\mu\nu} \equiv R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}\\[0.35cm]	% equiv gives equivalent symbol
+\text{6CO}_2 + \text{6H}_2\text{O} \to \text{C}_6\text{H}_{12}\text{O}_\text{6} + \text{6O}_2\\[0.3cm]
+\text{SO}_4^{2-} + \text{Ba}^{2+} \to \text{BaSO}_4\\[0.3cm]
+\begin{pmatrix}			% pmatrix used just like in page 1
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn} \\
+\end{pmatrix}
+\begin{pmatrix}
+v_1 \\
+v_2 \\
+\vdots \\
+v_n \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+w_1 \\
+w_2 \\
+\vdots \\
+w_n \\
+\end{pmatrix}\\[0.3cm]
+\frac{\partial \textbf{u}}{\partial t} + (\textbf{u}\cdot\nabla)\textbf{u}		% partial is used for partial derivative
+-\nu\nabla^{2}(\textbf{u}) = -\nabla\textbf{h}\\[0.4cm]
+\alpha A\beta B\gamma \Gamma \delta\Delta\pi\Pi\omega\Omega\\	% symbols printed
+\end{gather*}	% end of list of equations
+\end{document}	% end of document
